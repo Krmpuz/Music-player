@@ -1,9 +1,9 @@
 # Music-player
-yea
+G10 school project.
 
 ---
 
 # To do list
 
-- [x] Find music .mp3 files
-- [x] Find sound effects, .mp3 files
+- [x] 
+- [x] 
