@@ -14,24 +14,23 @@ boolean firstMouseclick=false;
 //
 void setup() {
   size (300, 300);
-  minim = new Minim(this);
-  song0 = minim.loadFile("../Music/SweetIThoughtYouWantedToDance.mp3");
-  song1 = minim.loadFile("../Music/Yonkers.mp3");
-  song2 = minim.loadFile("../Music/Earfquake.mp3");
-  song3 = minim.loadFile("../Music/Glitter.mp3");
-  soundEffect0 = minim.loadFile("../Sound Effects/TheSimplestSting.mp3");
-  soundEffect1 = minim.loadFile("../Sound Effects/Door.mp3");
-  song1.loop(0);
+ loadMusic();
+  song0.loop(0);
+  soundEffect0.loop(0)
 } //End setup
 //
 void draw() {
 
-if (firstMouseclick == true ) background(0);
-//End draw
-void keyPressed() { //End keyPressed
+  if (firstMouseclick == true ) background(0);
+}//End draw
+//
+void keyPressed() {
   //
+  soundEffect1.play();
+  if ( key=='0' ) song0.loop(0);
   if ( key=='Q' || key=='q' ) exit ();
   //
+  //End keyPressed
 }
 void mousePressed() {
   soundEffect0.rewind();
