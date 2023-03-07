@@ -10,32 +10,40 @@ Minim minim;
 AudioPlayer song0, song1, song2, song3;
 AudioPlayer soundEffect0, soundEffect1;
 //
-boolean firstMouseclick=false;
+int time = 7000;
+//
+Boolean activateWindow=false;
 //
 void setup() {
   size (300, 300);
- loadMusic();
-  song0.loop(0);
-  soundEffect0.loop(0)
+  loadMusic();
+  //
+  //Illsutrate Garbage Collection of Local Variable
+  //printIn("Music Pathway is", musicPathway); //local variable doesn't exit outside of void loadMusic() {}
+  //
 } //End setup
 //
 void draw() {
-
-  if (firstMouseclick == true ) background(0);
+  if ( activateWindow == true ) background(0);
 }//End draw
+//Debugging the Effective Length of the Sound Effect to code a delay
+//println ( soundEffect0.position(), soundEffect0.length() );
+//println ("When does the sound stop? Indicates delay");
 //
 void keyPressed() {
   //
-  soundEffect1.play();
-  if ( key=='0' ) song0.loop(0);
-  if ( key=='Q' || key=='q' ) exit ();
+  //Play sound effect when pressing a key, including delay
+  soundEffect0.play();
+  soundEffect0.rewind();
+  delay(4000); //milliseconds read from draw() printIn() debugging
+  //
+  keyPressedShortCuts();
   //
   //End keyPressed
 }
 void mousePressed() {
   soundEffect0.rewind();
-  if ( firstMouseclick==false ) firstMouseclick = true;
+  if ( activateWindow==false ) activateWindow = true;
 } //End mousePressed
-
 //
 //End MAIN Program
