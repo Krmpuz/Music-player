@@ -11,7 +11,20 @@ void musicShortCuts() {
   if ( key == '2' ) song1.loop(0);
   if ( key == '3' ) song2.loop(0);
   if ( key == '4' ) song3.loop(0);
-  //End musicShortCuts
-    //
-    //End Key Board Short Cuts Sub Program
-  }
+}//End musicShortCuts
+//
+void quitButtons() {
+  //Quit Button Key Board Shortcuts
+  if ( key == 'Q' || key == 'q' ) {
+    quitButtonCode();
+  }//End Quit Buttons
+}//End quitButtons
+//
+void quitButtonCode() {
+  soundEffect1.loop(0); //only need partial file, use .play(int millis)
+  //visual Image or Text of Goodbye
+  delay(300); // alternative way of playing sound once
+  exit();
+}//End quitButtonCode
+//
+//End Key Board Short Cuts Sub Program

@@ -18,7 +18,7 @@ void loadMusic() {
   soundEffect0 = minim.loadFile( soundEffectPathway + stingFileName );
   soundEffect1 = minim.loadFile( soundEffectPathway + doorFileName );
   //
-  //PrintIn("Music Pathway is", musicpathway);
-  //End loadMusic
-}
+  //printIn("Music Pathway is", musicpathway);
+}//End loadMusic
+
   
