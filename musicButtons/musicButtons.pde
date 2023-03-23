@@ -7,7 +7,7 @@ float playX, playY, stopX, stopY, muteX, muteY, loopIX, loopIY;
 float ffX, ffY, rrX, rrY, nextX, nextY, prevX, prevY, loop1X, loop1Y;
 float loopPlaylistX, loopPlaylistY;
 //
-voiid setup() {
+void setup() {
   //Display
   size(700, 500); //width, height
   //fullScreen(); //displayWidth, displayHeight
@@ -30,7 +30,7 @@ voiid setup() {
   pauseY2 = pauseY1;
   //
   buttonPositionRow = 1;
-  muteX = pauseX1
+  muteX = pauseX1;
   muteX = pauseY1;
   //
   buttonPositionRow = 1;
@@ -67,4 +67,14 @@ void draw() {
   //rect( spaceX, spaceY, spaceHeight, buttonSide );
   //
   //Stop Button
-  rect( stopX, StopY, buttonSide
+  rect( stopX, StopY, buttonSide, buttonSide ); //Layout????
+  //rect ( stopX, StopY, buttonSide, buttonSide ); //Square shape
+  //
+  //Pause Button
+  rect( pauseX1, pauseY1, buttonide, buttonSide ); //Layout
+  //rect( pauseX1, pauseY1, pauseWidth, buttonSide );
+  //recct( pauseX2, pauseY2, pauseWidth, buttonSide );
+  //
+  //Play button
+  rect( playX, playY, buttonSide, buttonSide );
+  //triangle( playX1, playY1, playX2, playX3, playY3 );
