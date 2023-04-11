@@ -67,4 +67,25 @@ void draw() {
   //rect( spaceX, spaceY, spaceHeight, buttonSide );
   //
   //Stop Button
-  rect( stopX, StopY, buttonSide
+  rect( stopX, StopY, buttonSide, buttonSide ); //Layout????
+  //rect( stopX stopY, buttonSide, buttonSide ); //Square shape
+  //
+  //Pause Button
+  rect( pauseX1, pauseY1, buttonSide, buttonSide ); //Layout
+  //rect( pauseX1, pauseY1, pauseWidth, buttonSide );
+  //rect( pauseX2, pauseY2, pauseWidth, buttonSide );
+  //
+  //Play Button
+  rect( playX, playY, buttonSide, buttonSide ): //Layout
+  //triangle( playX1, playY1, playX2, playY2, playX3, playY3 );
+  //
+  //MUTE Button
+  rect( muteX, MuteY, buttonSide, buttonSide ); //Layout
+  //Studentss to develop
+  //
+  //Fast Forward in the Song
+  rect( ffX, ffY, buttonSide, buttonSide ); //Layout
+  //triangle( ffX1A, ffY1A, ffX2A, ffY2A, ffX3A, ffY3A );
+  //triangle( ffX1B, ffY1B, ffX2B, ffY2B, ffX3B, ffY3B );
+  //
+  //Reversse in the Song
