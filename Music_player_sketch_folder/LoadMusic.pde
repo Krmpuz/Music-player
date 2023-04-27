@@ -11,12 +11,12 @@ void loadMusic() {
   String glitterFileName = "Glitter.mp3";
   String stingFileName = "TheSimplestSting.mp3";
   String doorFileName = "Door.mp3";
-  song0 = minim.loadFile( musicPathway + sweetFileName );
-  song1 = minim.loadFile( musicPathway + yonkersFileName );
-  song2 = minim.loadFile( musicPathway + earfquakeFileName );
-  song3 = minim.loadFile( musicPathway + glitterFileName );
-  soundEffect0 = minim.loadFile( soundEffectPathway + stingFileName );
-  soundEffect1 = minim.loadFile( soundEffectPathway + doorFileName );
+  songs[0] = minim.loadFile( musicPathway + sweetFileName );
+  songs[1] = minim.loadFile( musicPathway + yonkersFileName );
+  songs[2] = minim.loadFile( musicPathway + earfquakeFileName );
+  songs[3] = minim.loadFile( musicPathway + glitterFileName );
+  soundEffect[0] = minim.loadFile( soundEffectPathway + stingFileName );
+  soundEffect[1] = minim.loadFile( soundEffectPathway + doorFileName );
   //
   //printIn("Music Pathway is", musicpathway);
 }//End loadMusic

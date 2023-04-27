@@ -1,3 +1,6 @@
+/* Note: this program does not deal with spaces very well
+ How would this be dealth with?
+ */
 //
 //Global Variables
 float buttonReferentMeasure;
@@ -7,9 +10,9 @@ float playX, playY, stopX, stopY, muteX, muteY, loopIX, loopIY;
 float ffX, ffY, rrX, rrY, nextX, nextY, prevX, prevY, loop1X, loop1Y;
 float loopPlaylistX, loopPlaylistY;
 //
-voiid setup() {
+void setup() {
   //Display
-  size(700, 500); //width, height
+  size(1920, 420); //width, height
   //fullScreen(); //displayWidth, displayHeight
   //
   //Population: visual data (hint, notes will lead to FOR or WHILE Loops to populate)
@@ -30,8 +33,8 @@ voiid setup() {
   pauseY2 = pauseY1;
   //
   buttonPositionRow = 1;
-  muteX = pauseX1
-  muteX = pauseY1;
+  muteX = pauseX1;
+    muteX = pauseY1;
   //
   buttonPositionRow = 1;
   muteX = pauseX1;
@@ -44,7 +47,9 @@ voiid setup() {
   ffX = pauseX1 + ( buttonPositionColumn*buttonReferentMeasure );
   ffY = pauseY1;
   //
-  buttonPositionColumn = 2; //can increment with +=1
+  rrX = pauseX1 - ( button PositionColumn*buttonReferentMeasure );
+  rrY = pauseY1
+    buttonPositionColumn = 2; //can increment with +=1
   nextX = pauseY1;
   //
   prevX = pauseX1 - ( buttonPositionColumn*buttonReferentMeasure );
@@ -60,7 +65,8 @@ void draw() {
   //
   //Confirming Local Variable Center X & Y garbage collected from setup()
   //print("Confirming Center X:", centerX);
-  //print("/t Confirming Button Position Couter:", button Position);
+  //print("/t Confirming Center Y:", centerY);
+  //println("/t Confirming Button Position Couter:", button Position);
   //
   //Button Space
   //rect( spaceX, spaceY, spaceWidth, buttonSide );
